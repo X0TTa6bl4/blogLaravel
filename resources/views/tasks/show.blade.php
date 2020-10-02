@@ -11,6 +11,10 @@
        </h3>
 
        {{$task->body}}
+       <form method="post" action="/tasks">
+           
+           <button type="submit" class="btn btn-primary"></button>
+       </form>
 
    </div>
 @endsection
