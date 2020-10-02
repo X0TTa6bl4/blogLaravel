@@ -16,15 +16,15 @@
 
             <div class="form-group">
                 <label for="inputTitle">Название статьи</label>
-                <input type="text" class="form-control" id="inputTitle" name = 'title'>
+                <input type="text" class="form-control" id="inputTitle" name = 'title' value="{{$task->title}}">
             </div>
             <div class="form-group">
                 <label for="inputShortDescription">Краткое описание статьи</label>
-                <input type="text" class="form-control" id="inputShortDescription" name = 'shortDescription'>
+                <input type="text" class="form-control" id="inputShortDescription" name = 'shortDescription' value="{{$task->shortDescription}}">
             </div>
             <div class="form-group">
                 <label for="inputBody">Полное описание статьи</label>
-                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body'></textarea>
+                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body' value="{{$task->body}}"></textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="inputPublish">
