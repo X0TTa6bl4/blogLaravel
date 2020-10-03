@@ -30,14 +30,20 @@ class TasksController extends Controller
 
     public function store()
     {
-        $this->validate(request(), [
-            'title' => 'required',
-            'shortDescription' => 'required',
-            'body' => 'required',
-        ]);
         Task::create(request()->all());
 
         return redirect('/tasks');
     }
 
+    public function edit($task)
+    {
+
+        Task::where('id', $task)->update([
+            'title'=>request('title'),
+            'shortDescription'=>request('shortDescription'),
+            'body'=>request('body'),
+        ]);
+
+        return redirect('/tasks/'.$task);
+    }
 }

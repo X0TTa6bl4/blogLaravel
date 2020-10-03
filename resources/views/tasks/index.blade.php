@@ -12,7 +12,12 @@
 
         <ul>
             @foreach($tasks as $task)
-                @include('tasks.item')
+                <div class="border-bottom">
+                    @include('tasks.item')
+
+                </div>
+                <br>
+                <br>
             @endforeach
         </ul>
     </div>

@@ -14,6 +14,8 @@ Route::post('/tasks', 'App\Http\Controllers\TasksController@store');
 
 Route::get('/tasks/{task}', 'App\Http\Controllers\TasksController@show');
 
+Route::post('/tasks/{task}', 'App\Http\Controllers\TasksController@edit');
+
 Route::post('/tasks/{task}/editing', 'App\Http\Controllers\TasksController@editing');
 
 Route::get('/about', function () {

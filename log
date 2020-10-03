@@ -1,0 +1,29 @@
+[33mcommit 96512bf5f19005e1cc399a1c609b80f83f96b6fc[m[33m ([m[1;36mHEAD -> [m[1;32mtasks/editing[m[33m, [m[1;31morigin/tasks/editing[m[33m)[m
+Author: Bazlov Maxim <ccmmw@yandex.ru>
+Date:   Fri Oct 2 11:19:00 2020 +0000
+
+    новая ветка
+
+[33mcommit 12f92f4fffcb10891492579c590d0c8381e51f4c[m
+Author: Bazlov Maxim <ccmmw@yandex.ru>
+Date:   Fri Oct 2 11:07:17 2020 +0000
+
+    Исправленна ошибка 419
+
+[33mcommit 08a8ce2c58d6264dc45b48c7018014e9f1ce6731[m
+Author: Bazlov Maxim <ccmmw@yandex.ru>
+Date:   Fri Oct 2 10:56:04 2020 +0000
+
+    Создана страница для редактирования статей, создана кнопка редактирования статей, сделан путь к странице редактирования
+
+[33mcommit 9098fc9912005591c557e4e0f450c9fba2710a94[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Bazlov Maxim <ccmmw@yandex.ru>
+Date:   Fri Oct 2 10:37:10 2020 +0000
+
+    added view editing
+
+[33mcommit ad904e3b22c4083facfb310549646d9d23af0472[m
+Author: Bazlov Maxim <ccmmw@yandex.ru>
+Date:   Fri Oct 2 10:24:03 2020 +0000
+
+    Initial commit

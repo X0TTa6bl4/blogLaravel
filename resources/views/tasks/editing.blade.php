@@ -10,10 +10,9 @@
             Редактирование статьи
         </h3>
 
-        <form method="post" action="/tasks">
+        <form method="post" action="/tasks/{{$task->id}}">
 
             @csrf
-
             <div class="form-group">
                 <label for="inputTitle">Название статьи</label>
                 <input type="text" class="form-control" id="inputTitle" name = 'title' value="{{$task->title}}">
@@ -24,7 +23,7 @@
             </div>
             <div class="form-group">
                 <label for="inputBody">Полное описание статьи</label>
-                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body' value="{{$task->body}}"></textarea>
+                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body' value="{{$task->body}}">{{$task->body}}</textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="inputPublish">
