@@ -18,11 +18,6 @@ class TasksController extends Controller
         return view('tasks.show', compact('task'));
     }
 
-    public function editing(Task $task)
-    {
-        return view('tasks.editing', compact('task'));
-    }
-
     public function create()
     {
         return view('tasks.create');
@@ -35,7 +30,12 @@ class TasksController extends Controller
         return redirect('/tasks');
     }
 
-    public function edit($task)
+    public function edit(Task $task)
+    {
+        return view('tasks.editing', compact('task'));
+    }
+
+    public function update($task)
     {
         Task::where('id', $task)->update([
             'title'=>request('title'),
@@ -44,5 +44,10 @@ class TasksController extends Controller
         ]);
 
         return redirect('/tasks/'.$task);
+    }
+    public function destroy(Task $task)
+    {
+        $task->delete();
+        return redirect('/tasks');
     }
 }
