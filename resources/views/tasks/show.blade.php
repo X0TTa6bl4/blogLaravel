@@ -11,9 +11,11 @@
        </h3>
 
        {{$task->body}}
-       <form method="post" action="/tasks">
-           
-           <button type="submit" class="btn btn-primary"></button>
+
+
+       <form method="post" action="/tasks/{{$task->id}}/editing">
+           @csrf
+           <button type="submit" class="btn btn-primary">Редактировать</button>
        </form>
 
    </div>
