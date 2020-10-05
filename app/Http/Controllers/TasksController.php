@@ -37,7 +37,6 @@ class TasksController extends Controller
 
     public function edit($task)
     {
-
         Task::where('id', $task)->update([
             'title'=>request('title'),
             'shortDescription'=>request('shortDescription'),
