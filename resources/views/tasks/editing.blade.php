@@ -10,9 +10,11 @@
             Редактирование статьи
         </h3>
 
-        <form method="post" action="/tasks/{{$task->id}}">
+        <form method="POST" action="/tasks/{{$task->id}}">
 
             @csrf
+            @method('PATCH')
+
             <div class="form-group">
                 <label for="inputTitle">Название статьи</label>
                 <input type="text" class="form-control" id="inputTitle" name = 'title' value="{{$task->title}}">
@@ -23,7 +25,7 @@
             </div>
             <div class="form-group">
                 <label for="inputBody">Полное описание статьи</label>
-                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body' value="{{$task->body}}">{{$task->body}}</textarea>
+                <textarea type="text" class="form-control" id="inputBody" rows="6" name = 'body'>{{$task->body}}</textarea>
             </div>
             <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="inputPublish">
@@ -33,6 +35,12 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Редактировать</button>
+        </form>
+        <br>
+        <form method="post" action="/tasks/{{$task->id}}">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-primary">Удалить</button>
         </form>
 
     </div>

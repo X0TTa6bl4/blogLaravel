@@ -13,8 +13,7 @@
        {{$task->body}}
 
 
-       <form method="post" action="/tasks/{{$task->id}}/editing">
-           @csrf
+       <form method="get" action="/tasks/{{$task->id}}/edit">
            <button type="submit" class="btn btn-primary">Редактировать</button>
        </form>
 
