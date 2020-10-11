@@ -25,7 +25,13 @@ class TasksController extends Controller
 
     public function store()
     {
-        Task::create(request()->all());
+        $attributes = request()->validate([
+            'title'=>'required',
+            'shortDescription'=>'required',
+            'body'=>'required',
+    ]);
+
+        Task::create($attributes);
 
         return redirect('/tasks');
     }
@@ -35,15 +41,23 @@ class TasksController extends Controller
         return view('tasks.editing', compact('task'));
     }
 
-    public function update($task)
+    public function update(Task $task)
     {
-        Task::where('id', $task)->update([
+        /*Task::where('id', $task)->update([
             'title'=>request('title'),
             'shortDescription'=>request('shortDescription'),
             'body'=>request('body'),
+        ]);*/
+
+        $attributes = request()->validate([
+            'title'=>'required',
+            'shortDescription'=>'required',
+            'body'=>'required',
         ]);
 
-        return redirect('/tasks/'.$task);
+        $task->update($attributes);
+
+        return redirect('/tasks/'.($task->id));
     }
     public function destroy(Task $task)
     {
