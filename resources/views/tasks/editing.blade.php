@@ -36,6 +36,11 @@
                 </label>
             </div>
 
+            <div class="form-group">
+                <label for="inputTags">Теги</label>
+                <input type="text" class="form-control" id="inputTags" name = 'tags' value="{{ old('tags', $task->tags->pluck('name')->implode(',')) }}">
+            </div>
+
             <button type="submit" class="btn btn-primary">Редактировать</button>
         </form>
         <br>

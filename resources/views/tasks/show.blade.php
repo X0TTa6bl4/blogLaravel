@@ -12,6 +12,8 @@
 
        {{$task->body}}
 
+        @include('tasks.tags', ['tags'=>$task->tags])
+
         @include('tasks.steps')
 
        <form method="get" action="/tasks/{{$task->id}}/edit">
