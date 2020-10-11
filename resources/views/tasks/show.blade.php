@@ -12,6 +12,7 @@
 
        {{$task->body}}
 
+        @include('tasks.steps')
 
        <form method="get" action="/tasks/{{$task->id}}/edit">
            <button type="submit" class="btn btn-primary">Редактировать</button>

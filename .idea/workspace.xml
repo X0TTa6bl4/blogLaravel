@@ -194,7 +194,7 @@
       <workItem from="1601889714900" duration="2699000" />
       <workItem from="1602324714343" duration="1385000" />
       <workItem from="1602333472315" duration="1374000" />
-      <workItem from="1602410247279" duration="3000000" />
+      <workItem from="1602410247279" duration="13200000" />
     </task>
     <servers />
   </component>
@@ -206,14 +206,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="894" y="148" key="#SSH_Configurations/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601068261655" />
-    <state x="910" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601020812993">
+    <state x="910" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602415285933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="910" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601020812993" />
+    <state x="910" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602415285933" />
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601031397870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="727" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601031397870" />
+    <state x="745" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602417937790">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="745" y="295" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602417937790" />
     <state x="1098" y="258" key="FileChooserDialogImpl" timestamp="1601020254785">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -222,14 +226,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1600975719858" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602412438582">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602419374505">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602412438582" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1601068312732">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602419374505" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1602415885659">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601068312732" />
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602415885659" />
     <state x="729" y="328" key="com.jetbrains.php.test.PhpNewTestDialog" timestamp="1601072778355">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

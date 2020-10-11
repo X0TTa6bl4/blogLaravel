@@ -7,11 +7,9 @@ Route::view('/about','about');
 
 Route::resource('/tasks', 'App\Http\Controllers\TasksController');
 
-/*Route::get('/tasks', 'App\Http\Controllers\TasksController@index');
-Route::get('/tasks/create', 'App\Http\Controllers\TasksController@create');
-Route::get('/tasks/{task}', 'App\Http\Controllers\TasksController@show');
-Route::post('/tasks', 'App\Http\Controllers\TasksController@store');
-Route::get('/tasks/{task}/edit', 'App\Http\Controllers\TasksController@edit');
-Route::patch('/tasks/{task}', 'App\Http\Controllers\TasksController@update');
-Route::delete('/tasks/{task}', 'App\Http\Controllers\TasksController@destroy');*/
+Route::post('/tasks/{task}/steps', 'App\Http\Controllers\TaskStepsController@store');
+
+Route::post('/completed-steps/{step}', 'App\Http\Controllers\CompletedStepsController@store');
+Route::delete('/completed-steps/{step}', 'App\Http\Controllers\CompletedStepsController@destroy');
+
 
