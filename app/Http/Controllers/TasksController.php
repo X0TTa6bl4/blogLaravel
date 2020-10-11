@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\Task;
+use App\Models\Tag;
 
 class TasksController extends Controller
 {
     public function index()
     {
-        $tasks = Task::latest()->get();
+        $tasks = Task::with('tags')->latest()->get();
 
         return view('tasks.index', compact('tasks'));
     }
@@ -43,12 +44,6 @@ class TasksController extends Controller
 
     public function update(Task $task)
     {
-        /*Task::where('id', $task)->update([
-            'title'=>request('title'),
-            'shortDescription'=>request('shortDescription'),
-            'body'=>request('body'),
-        ]);*/
-
         $attributes = request()->validate([
             'title'=>'required',
             'shortDescription'=>'required',
@@ -57,7 +52,23 @@ class TasksController extends Controller
 
         $task->update($attributes);
 
-        return redirect('/tasks/'.($task->id));
+        $taskTags = $task->tags->keyBy('name');
+
+        $tags = collect(explode(',', request('tags')))->keyBy(function ($item) { return $item; });
+
+        $syncIds = $taskTags->intersectByKeys($tags)->pluck('id')->toArray();
+
+        $tagsToAttach = $tags->diffKeys($taskTags);
+
+        foreach ($tagsToAttach as $tag) {
+            $tag = Tag::firstOrCreate(['name' => $tag]);
+
+            $syncIds[] = $tag->id;
+        }
+
+        $task->tags()->sync($syncIds);
+
+        return redirect('/tasks');
     }
     public function destroy(Task $task)
     {

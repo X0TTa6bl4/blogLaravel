@@ -14,7 +14,6 @@
             @foreach($tasks as $task)
                 <div class="border-bottom">
                     @include('tasks.item')
-
                 </div>
                 <br>
                 <br>
