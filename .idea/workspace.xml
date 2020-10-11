@@ -193,6 +193,8 @@
       <workItem from="1601676423033" duration="7536000" />
       <workItem from="1601889714900" duration="2699000" />
       <workItem from="1602324714343" duration="1385000" />
+      <workItem from="1602333472315" duration="1374000" />
+      <workItem from="1602410247279" duration="3000000" />
     </task>
     <servers />
   </component>
@@ -220,10 +222,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1600975719858" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1601634726982">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1602412438582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1601634726982" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040/1920.0.1280.984@0.0.1920.1040" timestamp="1602412438582" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1601068312732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -242,7 +244,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/welcome.blade.php</url>
-          <line>12</line>
+          <line>1</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
