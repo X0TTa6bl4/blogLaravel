@@ -31,8 +31,4 @@ class Task extends Model
         return $this->belongsToMany(Tag::class);
     }
 
-    public static function tagsCloud()
-    {
-        return (new static)->has('tasks')->get();
-    }
 }

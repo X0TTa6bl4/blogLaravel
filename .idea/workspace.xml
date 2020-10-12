@@ -223,7 +223,8 @@
       <workItem from="1601889714900" duration="2699000" />
       <workItem from="1602324714343" duration="1385000" />
       <workItem from="1602333472315" duration="1374000" />
-      <workItem from="1602410247279" duration="23441000" />
+      <workItem from="1602410247279" duration="24080000" />
+      <workItem from="1602503567980" duration="1179000" />
     </task>
     <servers />
   </component>
@@ -250,6 +251,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="894" y="148" key="#SSH_Configurations" timestamp="1601068261655">
