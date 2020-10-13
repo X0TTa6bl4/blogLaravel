@@ -15,3 +15,6 @@ Route::post('/completed-steps/{step}', 'App\Http\Controllers\CompletedStepsContr
 Route::delete('/completed-steps/{step}', 'App\Http\Controllers\CompletedStepsController@destroy');
 
 
+
+Auth::routes();
+

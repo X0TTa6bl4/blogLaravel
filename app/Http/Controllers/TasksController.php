@@ -7,9 +7,15 @@ use App\Models\Tag;
 
 class TasksController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('can:update,task')->except(['index', 'store', 'create']);
+    }
+
     public function index()
     {
-        $tasks = Task::with('tags')->latest()->get();
+        $tasks =  auth()->user()->tasks()->with('tags')->latest()->get();
 
         return view('tasks.index', compact('tasks'));
     }
@@ -31,6 +37,8 @@ class TasksController extends Controller
             'shortDescription'=>'required',
             'body'=>'required',
     ]);
+
+        $attributes['owner_id'] = auth()->id();
 
         Task::create($attributes);
 
