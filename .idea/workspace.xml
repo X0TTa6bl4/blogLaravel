@@ -162,6 +162,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
       <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/laravel/telescope" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hyEYvYjntA5oYu7UrQup4EMgIu" />
@@ -227,7 +228,8 @@
       <workItem from="1602410247279" duration="24080000" />
       <workItem from="1602503567980" duration="1179000" />
       <workItem from="1602530473461" duration="3676000" />
-      <workItem from="1602582558706" duration="6815000" />
+      <workItem from="1602582558706" duration="9242000" />
+      <workItem from="1602675477970" duration="1077000" />
     </task>
     <servers />
   </component>
