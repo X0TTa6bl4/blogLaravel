@@ -11,7 +11,7 @@ class Step extends Model
 
     protected $guarded = [];
 
-    public function task($relations)
+    public function task()
     {
         return $this->belongsTo(Task::class);
     }
